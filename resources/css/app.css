@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Turuncu Tema Renkleri */
+:root {
+    --orange-primary: #ff6b00;
+    --orange-dark: #e65c00;
+    --orange-light: #ff8533;
+    --orange-lighter: #fff0e6;
+}
+
+/* Navbar Stilleri */
+.navbar {
+    background-color: var(--orange-primary) !important;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: white !important;
+}
+
+.navbar-dark .nav-link:hover {
+    color: var(--orange-lighter) !important;
+}
+
+/* Buton Stilleri */
+.btn-primary {
+    background-color: var(--orange-primary) !important;
+    border-color: var(--orange-primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--orange-dark) !important;
+    border-color: var(--orange-dark) !important;
+}
+
+.btn-outline-primary {
+    color: var(--orange-primary) !important;
+    border-color: var(--orange-primary) !important;
+}
+
+.btn-outline-primary:hover {
+    color: white !important;
+    background-color: var(--orange-primary) !important;
+}
+
+/* Card Stilleri */
+.card {
+    border-color: #ddd;
+}
+
+.card-header {
+    background-color: var(--orange-lighter) !important;
+    border-bottom: 2px solid var(--orange-primary);
+}
+
+/* Form Stilleri */
+.form-control:focus {
+    border-color: var(--orange-primary);
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25);
+}
+
+/* Link Stilleri */
+a {
+    color: var(--orange-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--orange-dark);
+}
+
+/* Badge Stilleri */
+.badge.bg-primary {
+    background-color: var(--orange-primary) !important;
+}
+
+.badge.bg-secondary {
+    background-color: var(--orange-dark) !important;
+}
+
+/* Footer Stilleri */
+.footer {
+    background-color: var(--orange-primary);
+    color: white;
+}
+
+/* Alert Stilleri */
+.alert-primary {
+    background-color: var(--orange-lighter);
+    border-color: var(--orange-light);
+    color: var(--orange-dark);
+}
+
+/* Pagination Stilleri */
+.page-link {
+    color: var(--orange-primary);
+}
+
+.page-link:hover {
+    color: var(--orange-dark);
+}
+
+.page-item.active .page-link {
+    background-color: var(--orange-primary);
+    border-color: var(--orange-primary);
+}
